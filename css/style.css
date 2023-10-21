@@ -1,0 +1,142 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+/* ---- base ---- */
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+}
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+/* ---- stats.js ---- */
+.count-particles{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Arial, sans-serif;
+  border-radius: 20px;
+}
+.count-particles h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+}
+.count-particles p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+.count-particles .socials ion-icon {
+    width: 24px;
+    height: 24px;
+}
+.count-particles .socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.count-particles .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+.count-particles .socials a:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+.js-count-particles{
+  font-size: 1.1em;
+}
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+/* ---- particles.js container ---- */
+/* ---- particles.js container ---- */
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: slideShow 60s infinite; /* Increased duration for smoother transitions */
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@keyframes slideShow {
+  /* Image 1 Display and Pan */
+  0% { 
+    background-image: url('https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    background-position: 40% 50%;
+  }
+  20% {
+    background-position: 60% 50%;
+  }
+
+  /* Transition to Image 2 */
+  30%, 33% {
+    background-image: url('https://images.unsplash.com/photo-1534996858221-380b92700493?auto=format&fit=crop&q=80&w=1931&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: 50% 40%;
+  }
+
+  /* Image 2 Display and Pan */
+  53% {
+    background-position: 50% 60%;
+  }
+
+  /* Transition to Image 3 */
+  63%, 66% {
+    background-image: url('https://images.unsplash.com/photo-1533294455009-a77b7557d2d1?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: 60% 50%;
+  }
+
+  /* Image 3 Display and Pan */
+  86% {
+    background-position: 40% 50%;
+  }
+
+  /* Transition to Image 1 for next loop */
+  96%, 100% {
+    background-image: url('https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
+}
+
