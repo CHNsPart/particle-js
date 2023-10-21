@@ -5,7 +5,8 @@ A smooth and elegant background slider using the Particles.js library. A perfect
 
 ## Preview
 
-(You can place an image or GIF preview here)
+![End-of-Life Tribute Video in Brown Beige Pink Femme Florals Style](https://github.com/CHNsPart/particle-js/assets/58574102/862080f2-9a7e-4102-b453-58bf0235a297)
+
 
 ## Features
 
