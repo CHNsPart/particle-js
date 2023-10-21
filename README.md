@@ -42,4 +42,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-- Touhidul Islam Chayan - [Email](mailto:your-email@example.com) - [GitHub](your-github-link) - [LinkedIn](your-linkedin-link)
+- Touhidul Islam Chayan - [Email](mailto:imchn24@gmail.com) - [GitHub](https://github.com/chnspart) - [LinkedIn](https://linkedin.com/in/chnspart)
